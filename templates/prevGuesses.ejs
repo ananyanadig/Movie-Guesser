@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Movie Guesser</title>
+</head>
+<style>
+    tr, th, td {
+        padding: 5px;
+    }
+
+
+</style>
+<body>
+    <h1>Display Previous Guesses</h1>
+    <form action="/remSubmit" method="post">
+        <input type="submit" value="Remove all prior guesses" onclick="return confirm('Are you sure you want to remove all guesses data? If you click OK, you will be returned to the home page.')">
+    </form>
+    <br>
+    <%- table %>
+    <br>
+
+    <hr>
+    <a href="/"><u>HOME</u></a>
+    
+</body>
+</html>
